@@ -1,3 +1,5 @@
+Rails.logger = Logger.new(STDOUT)
+
 class StaticPagesController < ApplicationController
   def home
   end

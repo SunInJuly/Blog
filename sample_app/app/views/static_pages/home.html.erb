@@ -1,3 +1,5 @@
+
+
 <div class="center hero-unit">
   <h1>Welcome to the Sample App</h1>
 
@@ -7,7 +9,10 @@
     sample application.
   </h2>
 
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
 </div>
+      <p style="text-align:center"> <%= link_to image_tag("up.png"), {:controller => 'move', :action => "up", remote: true } %> <br>  
+       <%= link_to image_tag("left.png"), {:controller => 'move', :action => "left", remote: true } %>
+       <%= link_to image_tag("right.png"), {:controller => 'move', :action => "right", remote: true } %> <br>
+       <%= link_to image_tag("down.png"), {:controller => 'move', :action => "down", remote: true } %>
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<div class="iv-embed" style="margin:0 auto;padding:0;border:0;width:642px;"><div class="iv-v" style="display:block;margin:0;padding:1px;border:0;background:#000;"><iframe class="iv-i" style="display:block;margin:0;padding:0;border:0;" src="//open.ivideon.com/embed/v2/?server=200-1f567e979ef0028f3c86d5e0c19b5c14&amp;camera=0&amp;width=&amp;height=&amp;lang=en" width="640" height="480" frameborder="0" allowfullscreen></iframe></div><div class="iv-b" style="display:block;margin:0;padding:0;border:0;"><div style="float:right;text-align:right;padding:0 0 10px;line-height:10px;"><a class="iv-a" style="font:10px Verdana,sans-serif;color:inherit;opacity:.6;" href="http://www.ivideon.com/" target="_blank">powered by Ivideon</a></div><div style="clear:both;height:0;overflow:hidden;">&nbsp;</div><script src="//open.ivideon.com/embed/v2/embedded.js"></script></div></div>
